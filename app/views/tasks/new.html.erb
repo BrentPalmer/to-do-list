@@ -1,0 +1,13 @@
+<div class='well'>
+  <%= form_for @task do |f| %>
+    <div class='control-group'>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div class='control-group'>
+      <%= f.label :description %>
+      <%= f.text_area :description %>
+    </div>
+    <%= f.submit %>
+  <% end %>
+</div>
