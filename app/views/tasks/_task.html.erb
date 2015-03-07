@@ -1,0 +1,9 @@
+<div class='well'>
+  <h3> <%= task.name %> </h3>
+  <p> <%= task.description %> </p>
+  <small>
+    <span>
+      <%= link_to "delete", task_path(task), method: :delete %>
+    </span>
+  </small>
+</div>

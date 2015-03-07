@@ -1,6 +1,6 @@
 <div class='well'>
   <%= form_for @task do |f| %>
-    <div class='control-group'>
+    <div class="control-group">
       <%= f.label :name %>
       <%= f.text_field :name %>
     </div>
@@ -8,6 +8,6 @@
       <%= f.label :description %>
       <%= f.text_area :description %>
     </div>
-    <%= f.submit %>
+    <%= f.submit "Create Task", class: "btn-btn-small  btn-primary" %>
   <% end %>
 </div>
